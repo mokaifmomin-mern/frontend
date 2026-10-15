@@ -68,7 +68,7 @@ function AddUser() {
       if (image) {
         data.append('image',formData.image);
       }
-      const response = await axios.post("http://localhost:5000/api/add-user",formData,{
+      const response = await axios.post("https://backend-rrkz.onrender.com/api/add-user",formData,{
         headers:{
           "Content-Type":"multipart/JSON",
           "Authorization":"Bearer "+token
